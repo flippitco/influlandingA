@@ -32,4 +32,10 @@ export class ButtonInputComponent implements OnInit {
         console.log(error);
     });
   }
+  closeErrorAlert() {
+    console.log('refresh component!');
+  }
+  closeSuccessAlert() {
+    console.log('refresh component!');
+  }
 }

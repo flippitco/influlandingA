@@ -22,6 +22,7 @@
             position: relative;
             -webkit-transition: color 1s; /* For Safari 3.1 to 6.0 */
             transition: color 1s;
+            cursor: pointer;
         }
         .buttonTextHide{
             color: transparent;
@@ -72,6 +73,7 @@
         -webkit-transition: opacity 3s; /* For Safari 3.1 to 6.0 */
         transition: opacity 3s;
         transition-delay: 1s;
+        cursor: pointer;
     }
     .sendButtonShow{
         opacity: 1;
@@ -98,6 +100,7 @@
         }
     }
     .alert-email-success-show, .alert-email-error-show{
+        position: relative;
         width: 100%;
         font-size: $mobile-h3-font-size;
         display: flex;
@@ -109,7 +112,11 @@
             opacity: 1;
         }
         img{
+            position: absolute;
+            top: 10px;
+            right: 6px;
             width: 16px;
+            cursor: pointer;
         }
     }
     .alert-email-error-show{
