@@ -87,17 +87,28 @@
         height: 56px;
         -webkit-transition: width 2.5s; /* For Safari 3.1 to 6.0 */
         transition: width 2.5s;
-        -webkit-transition: font-size 2.5s; /* For Safari 3.1 to 6.0 */
-        transition: font-size 2.5s;
-        color: $main-button-text-color;
         background-color: $main-button-color;
-        font-size: 0;
+        color: transparent;
+        p{
+            opacity: 0;
+            -webkit-transition: opacity 2.5s; /* For Safari 3.1 to 6.0 */
+            transition: opacity 2.5s;
+            transition-delay: 1.5s;
+        }
     }
     .alert-email-success-show, .alert-email-error-show{
         width: 100%;
         font-size: $mobile-h3-font-size;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $main-button-text-color;
+        border-radius: 2px;
+        p{
+            opacity: 1;
+        }
     }
     .alert-email-error-show{
-        background: red;
+        background-color: $error-alert-color;
     }
 }
