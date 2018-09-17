@@ -16,8 +16,13 @@ export class ButtonInputComponent implements OnInit {
     this.buttonHide = true;
   }
   sendEmail(email) {
-    this.emailService.sendEmail(email).subscribe(response =>  {
-      console.log(response);
+    this.emailService.sendEmail(email).subscribe((response: {status: Number}) =>  {
+      if (response.status === 200) {
+        console.log('Email mandado!');
+        email = null;
+      } else {
+        console.log('Error al mandar el mail!');
+      }
     });
   }
 }
