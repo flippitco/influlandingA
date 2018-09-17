@@ -8,7 +8,6 @@ export class EmailService {
   constructor(private http: HttpClient) { }
 
   sendEmail(email) {
-    console.log(email);
     return this.http.post(AppConfig.endpoints.mail, { email });
   }
 }

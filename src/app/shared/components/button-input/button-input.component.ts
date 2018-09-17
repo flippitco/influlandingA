@@ -19,11 +19,15 @@ export class ButtonInputComponent implements OnInit {
     this.buttonHide = true;
   }
   sendEmail(email) {
+    if (!email) {
+      throw new Error('Invalid Email!');
+    }
     this.inputHide = true;
     this.emailService.sendEmail(email).subscribe((response: {status: Number}) =>  {
       if (response.status === 200) {
         this.success = true;
       } else {
+        console.log(response);
         this.error = true;
       }
     });
