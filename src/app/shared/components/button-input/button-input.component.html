@@ -3,7 +3,7 @@
         <button [ngClass]="{'buttonTextHide': buttonHide}" (click)="showInput()">{{ text }}</button>
     </div>
     <div class="input-container" [ngClass]="{'input-container-show': buttonHide}">
-        <input type="text" placeholder="Email">
+        <input type="text" placeholder="Email" [(ngModel)]="email">
     </div>
-    <button class="sendButton" [ngClass]="{'sendButtonShow': buttonHide}">Acceso anticipado</button>
+    <button class="sendButton" [ngClass]="{'sendButtonShow': buttonHide}" (click)="sendEmail(email)">Acceso anticipado</button>
 </div>

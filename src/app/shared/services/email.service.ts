@@ -3,11 +3,12 @@ import { HttpClient } from '@angular/common/http';
 import { AppConfig } from '../../config/app.config';
 
 @Injectable()
-export class MailService {
+export class EmailService {
 
   constructor(private http: HttpClient) { }
 
-  sendMail(email) {
-    this.http.post(AppConfig.endpoints.mail, { email });
+  sendEmail(email) {
+    console.log(email);
+    return this.http.post(AppConfig.endpoints.mail, { email });
   }
 }
