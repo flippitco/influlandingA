@@ -1,0 +1,25 @@
+@import '../../../../styles/palette';
+@import '../../../../styles/variables';
+.footer-container {
+    background-image: linear-gradient(147deg, $gradient-light, $gradient-dark);
+    color: $first-slide-text-color;
+    .footer-logo-container {
+        width: 90%;
+        margin: 0 auto;
+        .footer-logo {
+            margin-top: $margin-top-image-to-h2;
+        }
+        .footer-h3 {
+            margin-top: $margin-top-image-to-h2;
+        }
+        .footer-logos-container {
+            margin-top: $margin-top-container-to-image;
+            width: 320px;
+            display: flex;
+            a{
+                margin-right: 16px;
+                margin-bottom: 68px;
+            }
+        }
+    }
+}

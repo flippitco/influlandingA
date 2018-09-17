@@ -1,0 +1,27 @@
+@import '../../../../styles/palette';
+@import '../../../../styles/variables';
+
+.fourth-slide-container{
+    color: $slide-text-color;
+    text-align: center;
+    padding-bottom: 93px;
+    
+    .fourth-slide-img{
+        margin-top: $margin-top-container-to-image;
+    }
+    .fourth-slide-h2{
+        font-size: $mobile-h2-font-size;
+        margin-top: $margin-top-image-to-h2;
+    }
+    .fourth-slide-h3{
+        margin-top: $margin-h2-to-h3-mobile;
+        font-size: $mobile-h3-font-size;
+        padding: 0 32px;
+    }
+    .fourth-slide-button-container{
+        margin: 0 auto;
+        margin-top: $margin-top-button-input-container;
+        width: 90%;
+        height: 56px;
+    }
+}

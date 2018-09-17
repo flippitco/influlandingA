@@ -1,0 +1,32 @@
+@import '../../../../styles/palette';
+@import '../../../../styles/variables';
+
+.third-slide-container{
+    color: $slide-text-color;
+    text-align: center;
+    margin-top: $margin-top-mobile;
+    background-color: $third-slide-background;
+    padding-bottom: 93px;
+    
+    .third-slide-img{
+        margin-top: $margin-top-container-to-image;
+    }
+    .third-slide-h2{
+        margin-top: $margin-top-image-to-h2;
+        font-size: $mobile-h2-font-size;
+    }
+    .third-slide-h3{
+        margin-top: $margin-h2-to-h3-mobile;
+        font-size: $mobile-h3-font-size;
+        padding: 0 32px;
+    }
+    .third-slid-br{
+
+    }
+    .third-slide-button-container{
+        margin: 0 auto;
+        margin-top: $margin-top-button-input-container;
+        width: 90%;
+        height: 56px;
+    }
+}

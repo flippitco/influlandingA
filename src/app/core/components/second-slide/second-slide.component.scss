@@ -2,12 +2,12 @@
 @import '../../../../styles/variables';
 
 .second-slide-container{
-    color: $second-slide-text-color;
+    color: $slide-text-color;
     text-align: center;
+    margin-top: $margin-top-mobile;
 
     .second-slide-left{
         .second-slide-h2{
-            margin-top: $margin-top-to-h2-mobile;
             font-size: $mobile-h2-font-size;
         }
         .second-slide-h3{
@@ -16,8 +16,14 @@
             padding: 0 32px;
         }
         .second-slide-flipButton{
-            margin: 52px 0;
+            margin: 52px 0 0;
             width: 90%;
+        }
+        .second-slide-button-container{
+            margin: 0 auto;
+            margin-top: $margin-top-button-input-container;
+            width: 90%;
+            height: 56px;
         }
     }
     .second-slide-right{

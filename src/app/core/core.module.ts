@@ -10,6 +10,7 @@ import { FirstSlideComponent } from './components/first-slide/first-slide.compon
 import { SecondSlideComponent } from './components/second-slide/second-slide.component';
 import { ThirdSlideComponent } from './components/third-slide/third-slide.component';
 import { FourthSlideComponent } from './components/fourth-slide/fourth-slide.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   imports: [
@@ -26,6 +27,7 @@ import { FourthSlideComponent } from './components/fourth-slide/fourth-slide.com
     SecondSlideComponent,
     ThirdSlideComponent,
     FourthSlideComponent,
+    FooterComponent,
   ],
   exports: [
     Error404Component,
