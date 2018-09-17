@@ -7,8 +7,11 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ButtonInputComponent implements OnInit {
   @Input() text: string;
+  buttonHide = false;
   constructor() { }
 
   ngOnInit() {}
-
+  showInput() {
+    this.buttonHide = true;
+  }
 }

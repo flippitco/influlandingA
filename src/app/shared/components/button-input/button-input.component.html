@@ -1,3 +1,8 @@
-<div class="button-container">
-    <button>{{ text }}</button>
+<div class="button-input-container">
+    <div class="button-container" [ngClass]="{'button-container-hide': buttonHide}">
+        <button [ngClass]="{'buttonTextHide': buttonHide}" (click)="showInput()">{{ text }}</button>
+    </div>
+    <div class="input-container" [ngClass]="{'input-container-show': buttonHide}">
+        
+    </div>
 </div>
