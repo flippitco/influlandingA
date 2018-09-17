@@ -45,10 +45,18 @@
             border-radius: 2px;
             padding-left: 30px;
             box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+            -webkit-transition: padding-left 2.5s; /* For Safari 3.1 to 6.0 */
+            transition: padding-left 2.5s;
         }
     }
     .input-container-show{
         width: 100%;
+    }
+    .input-container-hide{
+        width: 0%;
+        input{
+            padding-left: 0px;
+        }
     }
     .sendButton{
         top: 64px;
@@ -67,5 +75,24 @@
     }
     .sendButtonShow{
         opacity: 1;
+    }
+    .sendButtonHide{
+        opacity: 0;
+    }
+
+    .alert-email-success, .alert-email-error{
+        top: 0;
+        position: absolute;
+        width: 0px;
+        height: 56px;
+        -webkit-transition: width 2.5s; /* For Safari 3.1 to 6.0 */
+        transition: width 2.5s;
+        background: green;
+    }
+    .alert-email-success-show, .alert-email-error-show{
+        width: 100%;
+    }
+    .alert-email-error-show{
+        background: red;
     }
 }

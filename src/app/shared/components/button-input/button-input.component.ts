@@ -10,18 +10,21 @@ export class ButtonInputComponent implements OnInit {
   @Input() text: string;
   buttonHide = false;
   email = null;
+  inputHide = false;
+  success = false;
+  error = null;
   constructor(private emailService: EmailService) { }
   ngOnInit() {}
   showInput() {
     this.buttonHide = true;
   }
   sendEmail(email) {
+    this.inputHide = true;
     this.emailService.sendEmail(email).subscribe((response: {status: Number}) =>  {
       if (response.status === 200) {
-        console.log('Email mandado!');
-        email = null;
+        this.success = true;
       } else {
-        console.log('Error al mandar el mail!');
+        this.error = true;
       }
     });
   }

@@ -2,8 +2,10 @@
     <div class="button-container" [ngClass]="{'button-container-hide': buttonHide}">
         <button [ngClass]="{'buttonTextHide': buttonHide}" (click)="showInput()">{{ text }}</button>
     </div>
-    <div class="input-container" [ngClass]="{'input-container-show': buttonHide}">
+    <div class="input-container" [ngClass]="{'input-container-show': buttonHide, 'input-container-hide': inputHide}">
         <input type="text" placeholder="Email" [(ngModel)]="email">
     </div>
-    <button class="sendButton" [ngClass]="{'sendButtonShow': buttonHide}" (click)="sendEmail(email)">Acceso anticipado</button>
+    <div class="alert-email-success" [ngClass]="{'alert-email-success-show': success}"></div>
+    <div class="alert-email-error" [ngClass]="{'alert-email-error-show': error}"></div>
+    <button class="sendButton" [ngClass]="{'sendButtonShow': buttonHide, 'sendButtonHide': inputHide}" (click)="sendEmail(email)">Acceso anticipado</button>
 </div>
