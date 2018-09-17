@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { throwIfAlreadyLoaded } from './module-import-guard';
 import { RouterModule } from '@angular/router';
-// import { SharedModule } from '../shared/shared.module';
+import { SharedModule } from '../shared/shared.module';
 import { HomeComponent } from './home/home.component';
 import { Error404Component } from './error404/error404.component';
 import { FirstSlideComponent } from './components/first-slide/first-slide.component';
@@ -16,7 +16,7 @@ import { FourthSlideComponent } from './components/fourth-slide/fourth-slide.com
     CommonModule,
     FormsModule,
     RouterModule,
-    // SharedModule,
+    SharedModule,
     ReactiveFormsModule
   ],
   declarations: [

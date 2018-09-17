@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { LanguageService } from './services/language.service';
+import { ButtonInputComponent } from './components/button-input/button-input.component';
 
 @NgModule({
   imports: [
@@ -11,9 +12,11 @@ import { LanguageService } from './services/language.service';
     TranslateModule
   ],
   declarations: [
-  ],
+  ButtonInputComponent
+],
   exports: [
     TranslateModule,
+    ButtonInputComponent
   ]
 })
 

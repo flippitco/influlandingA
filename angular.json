@@ -27,8 +27,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
-              "src/normalize.scss"
+              "src/styles/styles.scss",
+              "src/styles/normalize.scss",
+              "src/styles/palette.scss",
+              "src/styles/variables.scss"
             ],
             "scripts": []
           },
