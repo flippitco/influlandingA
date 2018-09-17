@@ -25,6 +25,7 @@ export class ButtonInputComponent implements OnInit {
     this.inputHide = true;
     this.emailService.sendEmail(email).subscribe((response: {status: Number}) =>  {
       if (response.status === 200) {
+        console.log(response);
         this.success = true;
       } else {
         console.log(response);
