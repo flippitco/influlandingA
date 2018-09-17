@@ -1,0 +1,26 @@
+@import '../../../../styles/palette';
+@import '../../../../styles/variables';
+
+.button-container{
+    width: 100%;
+}
+button{
+    width: 90%;
+    margin: 0 auto;
+    height: 56px;
+    border-radius: 3.9px;
+    background-color: $main-button-color;
+    color: $main-button-text-color;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+@keyframes example {
+    0%   {
+        width: 100%;
+    }
+    100% {
+        width: 0%;
+    }
+}

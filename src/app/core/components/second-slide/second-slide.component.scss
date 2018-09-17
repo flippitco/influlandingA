@@ -1,11 +1,28 @@
-.second-slide-container{
-    .second-slide-left{
+@import '../../../../styles/palette';
+@import '../../../../styles/variables';
 
+.second-slide-container{
+    color: $second-slide-text-color;
+    text-align: center;
+
+    .second-slide-left{
+        .second-slide-h2{
+            margin-top: $margin-top-to-h2-mobile;
+            font-size: $mobile-h2-font-size;
+        }
+        .second-slide-h3{
+            margin-top: $margin-h2-to-h3-mobile;
+            font-size: $mobile-h3-font-size;
+            padding: 0 32px;
+        }
+        .second-slide-flipButton{
+            margin: 52px 0;
+            width: 90%;
+        }
     }
     .second-slide-right{
         .second-slide-background{
             display: none;
         }
     }
-
 }

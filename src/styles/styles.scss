@@ -21,6 +21,10 @@ body{
   box-shadow: none;
   outline: none;
 }
+h2,h3,p {
+  margin: 0;
+  padding: 0;
+}
 
 /************************* INPUT *************************/
 button, input[type="submit"], input[type="reset"], input[type="text"], input[type="email"] {
