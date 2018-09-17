@@ -6,10 +6,10 @@ import { RouterModule } from '@angular/router';
 // import { SharedModule } from '../shared/shared.module';
 import { HomeComponent } from './home/home.component';
 import { Error404Component } from './error404/error404.component';
-import { SlideOneComponent } from './components/slide-one/slide-one.component';
-import { SlideTwoComponent } from './components/slide-two/slide-two.component';
-import { SlideThreeComponent } from './components/slide-three/slide-three.component';
-import { SlideFourComponent } from './components/slide-four/slide-four.component';
+import { FirstSlideComponent } from './components/first-slide/first-slide.component';
+import { SecondSlideComponent } from './components/second-slide/second-slide.component';
+import { ThirdSlideComponent } from './components/third-slide/third-slide.component';
+import { FourthSlideComponent } from './components/fourth-slide/fourth-slide.component';
 
 @NgModule({
   imports: [
@@ -22,10 +22,10 @@ import { SlideFourComponent } from './components/slide-four/slide-four.component
   declarations: [
     HomeComponent,
     Error404Component,
-    SlideOneComponent,
-    SlideTwoComponent,
-    SlideThreeComponent,
-    SlideFourComponent,
+    FirstSlideComponent,
+    SecondSlideComponent,
+    ThirdSlideComponent,
+    FourthSlideComponent,
   ],
   exports: [
     Error404Component,

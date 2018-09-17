@@ -9,7 +9,6 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "deploy": "ng build --prod --base-href 'https://flippitco.github.io/influlandingA/' && rm dist/3rdpartylicenses.txt && npx ngh --no-silent"
-
   },
   "private": true,
   "dependencies": {
