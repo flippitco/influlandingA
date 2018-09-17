@@ -89,11 +89,12 @@
         transition: width 2.5s;
         background-color: $main-button-color;
         color: transparent;
-        p{
+        p, img{
             opacity: 0;
             -webkit-transition: opacity 2.5s; /* For Safari 3.1 to 6.0 */
             transition: opacity 2.5s;
             transition-delay: 1.5s;
+            margin-right: 6px;
         }
     }
     .alert-email-success-show, .alert-email-error-show{
@@ -104,8 +105,11 @@
         justify-content: center;
         color: $main-button-text-color;
         border-radius: 2px;
-        p{
+        p, img{
             opacity: 1;
+        }
+        img{
+            width: 16px;
         }
     }
     .alert-email-error-show{

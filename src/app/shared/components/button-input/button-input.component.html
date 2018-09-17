@@ -6,10 +6,10 @@
         <input type="text" placeholder="Email" [(ngModel)]="email">
     </div>
     <div class="alert-email-success" [ngClass]="{'alert-email-success-show': success}">
-        <p>Ok! Pronto nos pondremos en contacto contigo!</p>
+        <p>Ok! Pronto nos pondremos en contacto contigo!</p><img src="assets/images/tickImg.svg">
     </div>
     <div class="alert-email-error" [ngClass]="{'alert-email-error-show': error}">
-        <p>Ups! Prueba de nuevo!</p>
+        <p>Ups! Prueba de nuevo!</p><img src="assets/images/closeIcon.svg">
     </div>
     <button class="sendButton" [ngClass]="{'sendButtonShow': buttonHide, 'sendButtonHide': inputHide}" (click)="sendEmail(email)">Acceso
         anticipado</button>
