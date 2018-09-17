@@ -1,0 +1,10 @@
+{
+    "HOME": {
+        "HELLO": "Hello Manuel!"
+    },
+    "HEADER": {
+        "menu1": "What we do?",
+        "menu2": "About us",
+        "menu3": "Contact"
+    }
+}
