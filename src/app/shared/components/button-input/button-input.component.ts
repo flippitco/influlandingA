@@ -27,9 +27,9 @@ export class ButtonInputComponent implements OnInit {
       if (response.status === 200) {
         this.success = true;
       }
-      if (response.status === 403) {
+    }, (error) => {
         this.error = true;
-      }
+        console.log(error);
     });
   }
 }
