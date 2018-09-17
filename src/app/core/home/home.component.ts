@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { LanguageService } from '../../shared/services/language.service';
 
 @Component({
   selector: 'app-home',
@@ -9,14 +8,10 @@ import { LanguageService } from '../../shared/services/language.service';
 })
 export class HomeComponent implements OnInit {
   constructor(
-    public translateService: TranslateService,
-    public languageService: LanguageService
+    public translateService: TranslateService
   ) {}
 
   ngOnInit() {
-    this.translateService.use(this.languageService.language);
-    this.languageService.langUpdated.subscribe(e => {
-      this.translateService.use(e);
-    });
+    this.translateService.use('es');
   }
 }
