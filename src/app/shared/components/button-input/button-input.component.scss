@@ -59,6 +59,11 @@
             padding-left: 0px;
         }
     }
+    .placeholder-error{
+        ::placeholder { 
+            color: $error-alert-color;
+        }
+    }
     .sendButton{
         top: 64px;
         left: 0;

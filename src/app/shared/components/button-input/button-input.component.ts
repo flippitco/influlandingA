@@ -13,6 +13,10 @@ export class ButtonInputComponent implements OnInit {
   inputHide = false;
   success = false;
   error = null;
+  placeholder = {
+    text: 'Email',
+    error: false
+  };
   constructor(private emailService: EmailService) { }
   ngOnInit() {}
   showInput() {
@@ -20,16 +24,19 @@ export class ButtonInputComponent implements OnInit {
   }
   sendEmail(email) {
     if (!email) {
-      throw new Error('Invalid Email!');
+      this.placeholder = {
+        text: 'Introduce un email válido!',
+        error: true
+      };
+      return;
     }
     this.inputHide = true;
     this.emailService.sendEmail(email).subscribe((response: {status: Number}) =>  {
       if (response.status === 200) {
         this.success = true;
       }
-    }, (error) => {
+    }, () => {
         this.error = true;
-        console.log(error);
     });
   }
   closeErrorAlert() {

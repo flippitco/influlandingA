@@ -2,8 +2,8 @@
     <div class="button-container" [ngClass]="{'button-container-hide': buttonHide}">
         <button [ngClass]="{'buttonTextHide': buttonHide}" (click)="showInput()">{{ text }}</button>
     </div>
-    <div class="input-container" [ngClass]="{'input-container-show': buttonHide, 'input-container-hide': inputHide}">
-        <input type="text" placeholder="Email" [(ngModel)]="email">
+    <div class="input-container" [ngClass]="{'input-container-show': buttonHide, 'input-container-hide': inputHide, 'placeholder-error': placeholder.error}">
+        <input type="text" [placeholder]="placeholder.text" [(ngModel)]="email">
     </div>
     <div class="alert-email-success" [ngClass]="{'alert-email-success-show': success}">
         <p>Ok! Pronto nos pondremos en contacto contigo!</p><img (click)="closeSuccessAlert()" src="assets/images/closeIcon.svg">
