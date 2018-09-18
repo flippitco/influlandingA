@@ -6,7 +6,7 @@
         <input type="text" [placeholder]="placeholder.text" [(ngModel)]="email">
     </div>
     <div class="alert-email-success" [ngClass]="{'alert-email-success-show': success}">
-        <p>Ok! Pronto nos pondremos en contacto contigo!</p><img (click)="closeAlert()" src="assets/images/closeIcon.svg">
+        <p>Pronto recibirás noticias!</p><img (click)="closeAlert()" src="assets/images/closeIcon.svg">
     </div>
     <div class="alert-email-error" [ngClass]="{'alert-email-error-show': error}">
         <p>Ups! Prueba de nuevo!</p><img (click)="closeAlert()"src="assets/images/closeIcon.svg">
