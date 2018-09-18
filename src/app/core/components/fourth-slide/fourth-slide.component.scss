@@ -1,28 +1,79 @@
 @import '../../../../styles/palette';
 @import '../../../../styles/variables';
-
-.fourth-slide-container{
+.fourth-slide-container {
     color: $slide-text-color;
     text-align: center;
-    padding-bottom: 93px;
-    
-    .fourth-slide-img{
+    padding-bottom: $mobile-padding-bottom-slide-container;
+    .fourth-slide-img {
         margin-top: $margin-top-container-to-image;
         width: $mobile-images-size;
     }
-    .fourth-slide-h2{
+    .fourth-slide-h2 {
         font-size: $mobile-h2-font-size;
         margin-top: $margin-top-image-to-h2;
     }
-    .fourth-slide-h3{
+    .fourth-slide-h3 {
         margin-top: $margin-h2-to-h3-mobile;
         font-size: $mobile-h3-font-size;
         padding: 0 32px;
     }
-    .fourth-slide-button-container{
+    .fourth-slide-button-container {
         margin: 0 auto;
-        margin-top: $margin-top-button-input-container;
+        margin-top: $margin-top-button-input-container-mobile;
         width: 90%;
         height: 56px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .fourth-slide-container{
+        padding-bottom: $tablet-padding-bottom-slide-container;
+        .fourth-slide-img {
+            margin-top: $tablet-margin-top-container-to-image;
+        }
+        .fourth-slide-h2 {}
+        .fourth-slide-h3 {
+            width: $tablet-width-h3;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .fourth-slide-button-container {
+            width: $tablet-width-button-input-container;
+        }
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .fourth-slide-container{
+        display: flex;
+        padding-bottom: $desktop-padding-bottom-third-slide-container;
+        text-align: left;
+
+        .fourth-slide-left{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+        }
+        .fourth-slide-right{
+            width: 50%;
+        }
+        .fourth-slide-img {
+            margin-top: $desktop-margin-top-h2;
+        }
+        .fourth-slide-h2 {
+            margin-top: $desktop-margin-top-h2;
+            font-size: $desktop-font-size-h2;
+        }
+        .fourth-slide-h3 {
+            width: $desktop-width-h3;
+            font-size: $desktop-font-size-h3;
+            margin-left: 0;
+            margin-right: 0;
+            padding: 0;
+        }
+        .fourth-slide-button-container {
+            width: $desktop-width-button-input-container;
+            margin-left: 0;
+        }
     }
 }

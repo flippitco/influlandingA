@@ -1,34 +1,100 @@
 @import '../../../../styles/palette';
 @import '../../../../styles/variables';
-
-.second-slide-container{
+.second-slide-container {
     color: $slide-text-color;
     text-align: center;
     margin-top: $margin-top-mobile;
-
-    .second-slide-left{
-        .second-slide-h2{
+    padding-bottom: $mobile-padding-bottom-slide-container;
+    .second-slide-left {
+        .second-slide-h2 {
             font-size: $mobile-h2-font-size;
         }
-        .second-slide-h3{
+        .second-slide-h3 {
             margin-top: $margin-h2-to-h3-mobile;
             font-size: $mobile-h3-font-size;
             padding: 0 32px;
         }
-        .second-slide-flipButton{
+        .second-slide-flipButton {
             margin: 52px 0 0;
             width: 90%;
         }
-        .second-slide-button-container{
+        .second-slide-button-container {
             margin: 0 auto;
-            margin-top: $margin-top-button-input-container;
+            margin-top: $margin-top-button-input-container-mobile;
             width: 90%;
             height: 56px;
         }
     }
-    .second-slide-right{
-        .second-slide-background{
+    .second-slide-right {
+        .second-slide-background {
             display: none;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .second-slide-container {
+        padding-bottom: $tablet-padding-bottom-slide-container;
+
+        .second-slide-left {
+            .second-slide-h2 {}
+            .second-slide-h3 {
+                width: $tablet-width-h3;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .second-slide-flipButton {
+                width: 480px;
+            }
+            .second-slide-button-container {
+                width: $tablet-width-button-input-container;
+            }
+        }
+        .second-slide-right {
+            .second-slide-background {}
+        }
+    }
+}
+@media only screen and (min-width: 1280px) {
+    .second-slide-container {
+        padding-bottom: $tablet-padding-bottom-slide-container;
+        display: flex;
+        text-align: left;
+
+        .second-slide-left {
+            display: flex;
+            flex-direction: column;
+            padding-left: $desktop-padding-left-container;
+            width: 50%;
+            .second-slide-h2 {
+                font-size: $desktop-font-size-h2;
+            }
+            .second-slide-h3 {
+                width: $desktop-width-h3;
+                padding: 0;
+                margin-left: 0;
+                margin-right: 0;
+                font-size: $desktop-font-size-h3;
+            }
+            .second-slide-flipButton {
+                display: none;
+            }
+            .second-slide-button-container {
+                width: $desktop-width-button-input-container;
+                margin-left: 0;
+            }
+        }
+        .second-slide-right {
+            position: relative;
+            width: 50%;
+
+            .second-slide-background {
+                display: block;
+                position: relative;
+                right: 0;
+                top: -106px;
+                width: 100%;
+            }
         }
     }
 }

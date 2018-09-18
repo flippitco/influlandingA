@@ -2,17 +2,32 @@
 |   Font sizes  |
 '--------------*/
 $mobile-h2-font-size: 32px;
-// $tablet-h2-font-size: 18px;
-// $desktop-h2-font-size: 24px;
+
 
 $mobile-h3-font-size: 18px;
-// $tablet-h3-font-size: 24px;
+
 // $desktop-h3-font-size: 24px;
 
 
 $margin-h2-to-h3-mobile: 24px;
 $margin-top-mobile: 72px;
-$margin-top-button-input-container: 52px;
+$margin-top-button-input-container-mobile: 52px;
 $margin-top-container-to-image: 24px;
 $margin-top-image-to-h2: 32px;
 $mobile-images-size: 320px; 
+$mobile-padding-bottom-slide-container: 93px;
+
+
+$tablet-width-button-input-container: 400px;
+$tablet-width-h3: 500px;
+$tablet-margin-top-container-to-image: 72px;
+$tablet-padding-bottom-slide-container: 120px;
+
+
+$desktop-font-size-h2: 64px;
+$desktop-font-size-h3: 24px;
+$desktop-width-h3: 511px;
+$desktop-width-button-input-container: 400px;
+$desktop-padding-left-container: 120px;
+$desktop-margin-top-h2: 234px;
+$desktop-padding-bottom-third-slide-container: 234px;

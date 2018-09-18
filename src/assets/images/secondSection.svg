@@ -1,16 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="929px" height="512px" viewBox="0 0 929 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="572px" height="512px" viewBox="0 0 572 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
-    <title>Rectangle 2 Copy</title>
+    <title>Ilustracion</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <linearGradient x1="0%" y1="30.9408767%" x2="100%" y2="58.1892677%" id="linearGradient-1">
-            <stop stop-color="#4396FF" offset="0%"></stop>
-            <stop stop-color="#45F2B7" offset="100%"></stop>
-            <stop stop-color="#45F2B7" offset="100%"></stop>
+        <linearGradient x1="3.76788288%" y1="3.73094288%" x2="100.507264%" y2="99.5218995%" id="linearGradient-1">
+            <stop stop-color="#45F2B7" offset="0%"></stop>
+            <stop stop-color="#4396FF" offset="100%"></stop>
         </linearGradient>
+        <path d="M64,261.279608 C28.3474671,259.458507 -4.50325725e-13,229.974099 -4.54747351e-13,193.868785 C-4.59168977e-13,157.763471 28.3474671,128.279063 64,126.457962 L64,261.279608 Z" id="path-2"></path>
+        <filter x="-23.4%" y="-8.9%" width="146.9%" height="122.2%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.28 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-4" x="-124.716895" y="158.605784" width="387" height="71" rx="35.5"></rect>
+        <filter x="-3.9%" y="-16.8%" width="107.8%" height="142.1%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.28 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M47,43 L21.5,43 C9.62587788,43 1.45416056e-15,33.3741221 0,21.5 C-1.45416056e-15,9.62587788 9.62587788,2.18124085e-15 21.5,0 L47,0 C58.5979797,-2.13051432e-15 68,9.40202025 68,21 L68,22 C68,33.5979797 58.5979797,43 47,43 Z" id="path-6"></path>
+        <filter x="-30.9%" y="-48.8%" width="161.8%" height="197.7%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="7" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M232.470588,0 L232.470588,43 L218.323529,43 C206.449407,43 196.823529,33.3741221 196.823529,21.5 C196.823529,9.62587788 206.449407,2.18124085e-15 218.323529,0 L232.470588,0 Z" id="path-8"></path>
+        <filter x="-59.1%" y="-49.1%" width="218.2%" height="198.3%" filterUnits="objectBoundingBox" id="filter-9">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="7" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
     </defs>
     <g id="04_Landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <rect id="Rectangle-2-Copy" fill="url(#linearGradient-1)" transform="translate(464.500000, 256.000000) rotate(-180.000000) translate(-464.500000, -256.000000) " x="0" y="2.27373675e-13" width="929" height="512" rx="256"></rect>
+        <g id="Landing-0002-Envio-datos-ok" transform="translate(-708.000000, -946.000000)">
+            <g id="Section-2-Fácil-de-usar" transform="translate(155.000000, 946.000000)">
+                <g id="Ilustracion" transform="translate(553.000000, 0.000000)">
+                    <rect id="Rectangle-2-Copy" fill="url(#linearGradient-1)" transform="translate(464.500000, 256.000000) rotate(-180.000000) translate(-464.500000, -256.000000) " x="0" y="0" width="929" height="512" rx="256"></rect>
+                    <g id="Flip-button" transform="translate(114.000000, 181.000000)">
+                        <g id="flip-bar" transform="translate(193.777778, 52.000000) rotate(-270.000000) translate(-193.777778, -52.000000) translate(141.777778, -141.777778)">
+                            <g id="Combined-Shape">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-2"></use>
+                            </g>
+                            <g id="Rectangle-2-Copy" transform="translate(68.616438, 194.222222) rotate(-90.000000) translate(-68.616438, -194.222222) ">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-4"></use>
+                            </g>
+                            <g id="Group-2" transform="translate(47.000000, 266.582953)">
+                                <text id="text-boton-01-copy" transform="translate(36.550000, 56.722603) rotate(-90.000000) translate(-36.550000, -56.722603) " font-family="WorkSans-Regular, Work Sans" font-size="17.0666667" font-weight="normal" line-spacing="45.5111111" letter-spacing="0.312888887" fill="#3D1980">
+                                    <tspan x="1.90751112" y="64.1726027">40 Flips</tspan>
+                                </text>
+                                <g id="user" transform="translate(10.687500, 55.535103) rotate(-90.000000) translate(-10.687500, -55.535103) translate(2.250000, 44.847603)" stroke="#3D1980" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.84444444">
+                                    <path d="M17,20 L17,17.6666667 C17,15.0893378 15.0972102,13 12.75,13 L4.25,13 C1.90278981,13 0,15.0893378 0,17.6666667 L0,20" id="Shape"></path>
+                                    <ellipse id="Oval" cx="8" cy="4.5" rx="4" ry="4.5"></ellipse>
+                                </g>
+                            </g>
+                            <path d="M47,268.055556 L89.2833333,268.055556" id="Line-Copy" stroke="#979797" stroke-width="1.42222222" opacity="0.199174" stroke-linecap="square" fill-rule="nonzero"></path>
+                            <g id="Group" transform="translate(67.777778, 130.111111) rotate(-90.000000) translate(-67.777778, -130.111111) translate(-48.666667, 108.333333)">
+                                <rect id="Fill" fill="url(#linearGradient-1)" x="0" y="17" width="232" height="9" rx="4.5"></rect>
+                                <g id="Combined-Shape">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                                    <path stroke-opacity="0.543789629" stroke="#FFFFFF" stroke-width="0.796444444" d="M47,42.6017778 C58.3780477,42.6017778 67.6017778,33.3780477 67.6017778,22 L67.6017778,21 C67.6017778,9.62195231 58.3780477,0.398222222 47,0.398222222 L21.5,0.398222222 C9.84580994,0.398222222 0.398222222,9.84580994 0.398222222,21.5 C0.398222222,33.1541901 9.84580994,42.6017778 21.5,42.6017778 L47,42.6017778 Z" stroke-linejoin="square" fill="#FFFFFF" fill-rule="evenodd"></path>
+                                </g>
+                                <g id="Combined-Shape-Copy" transform="translate(214.769608, 21.369863) rotate(-180.000000) translate(-214.769608, -21.369863) ">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-9)" xlink:href="#path-8"></use>
+                                    <path stroke-opacity="0.543789629" stroke="#FFFFFF" stroke-width="0.796444444" d="M232.072366,0.398222222 L218.323529,0.398222222 C206.669339,0.398222222 197.221752,9.84580994 197.221752,21.5 C197.221752,33.1541901 206.669339,42.6017778 218.323529,42.6017778 L232.072366,42.6017778 L232.072366,0.398222222 Z" stroke-linejoin="square" fill="#FFFFFF" fill-rule="evenodd"></path>
+                                </g>
+                                <text id="+" font-family="WorkSans-Regular, Work Sans" font-size="17.0666667" font-weight="normal" letter-spacing="-0.411607742" fill="#3D1980">
+                                    <tspan x="208.551671" y="25">+</tspan>
+                                </text>
+                                <text id="-" font-family="WorkSans-Regular, Work Sans" font-size="17.0666667" font-weight="normal" letter-spacing="-0.411607742" fill="#3D1980">
+                                    <tspan x="14.3538039" y="25">-</tspan>
+                                </text>
+                                <path d="M198.5,7.71428571 L198.5,36.2857143" id="Line-Copy-2" stroke="#FFFFFF" stroke-width="1.42222222" opacity="0.304386" stroke-linecap="square" fill-rule="nonzero"></path>
+                                <g id="Group-3" transform="translate(31.000000, 6.000000)">
+                                    <text id="0" font-family="WorkSans-Regular, Work Sans" font-size="17.0666667" font-weight="normal" letter-spacing="-0.411607742" fill="#3D1980">
+                                        <tspan x="11.3980705" y="16">0</tspan>
+                                    </text>
+                                    <path d="M1.5,3.71052632 L1.5,29.2894737" id="Line-Copy" stroke="#979797" stroke-width="1.42222222" opacity="0.149174" stroke-linecap="square" fill-rule="nonzero"></path>
+                                </g>
+                            </g>
+                            <polyline id="Right-arrow-Copy-2" stroke="#3D1980" stroke-width="1.42222222" transform="translate(19.500000, 193.308980) scale(-1, -1) translate(-19.500000, -193.308980) " points="22.9993572 200.062405 16 193.062083 23 186.062405"></polyline>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
     </g>
 </svg>
