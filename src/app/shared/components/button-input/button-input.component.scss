@@ -5,12 +5,11 @@
     width: 100%;
     .button-container {
         width: 100%;
-        -webkit-transition: width 2s;
-        /* For Safari 3.1 to 6.0 */
-        transition: width 2s;
+        -webkit-transition: width $transition-width;
+        transition: width $transition-width;
         top: 0;
         position: absolute;
-        z-index: 1;
+        z-index: 3;
         button {
             width: 100%;
             height: 56px;
@@ -18,26 +17,28 @@
             background-color: $main-button-color;
             color: $main-button-text-color;
             position: relative;
-            -webkit-transition: color 1s;
-            /* For Safari 3.1 to 6.0 */
-            transition: color 1s;
+            -webkit-transition: color $transition-color;
+            transition: color $transition-color;
             cursor: pointer;
         }
         .buttonTextHide {
             color: transparent;
+            font-size: 0;
         }
     }
     .button-container-hide {
         width: 0px;
+        font-size: 0;
     }
     .input-container {
+        left: 0;
         top: 0;
         position: absolute;
+        z-index: 2;
         width: 0px;
         height: 56px;
-        -webkit-transition: width 2.5s;
-        /* For Safari 3.1 to 6.0 */
-        transition: width 2.5s;
+        -webkit-transition: width $transition-width;
+        transition: width $transition-width;
         input {
             box-sizing: border-box;
             width: 100%;
@@ -45,9 +46,8 @@
             border-radius: 2px;
             padding-left: 30px;
             box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-            -webkit-transition: padding-left 2.5s;
-            /* For Safari 3.1 to 6.0 */
-            transition: padding-left 2.5s;
+            -webkit-transition: padding-left $transition-padding-left;
+            transition: padding-left $transition-padding-left;
         }
     }
     .input-container-show {
@@ -78,10 +78,9 @@
         background-color: $main-button-color;
         color: $main-button-text-color;
         opacity: 0;
-        -webkit-transition: opacity 3s;
-        /* For Safari 3.1 to 6.0 */
-        transition: opacity 3s;
-        transition-delay: 1s;
+        -webkit-transition: opacity $transition-opacity;
+        transition: opacity $transition-opacity;
+        transition-delay: $transition-opacity-delay;
         cursor: pointer;
     }
     .sendButtonShow {
@@ -96,18 +95,16 @@
         position: absolute;
         width: 0px;
         height: 56px;
-        -webkit-transition: width 1.5s;
-        /* For Safari 3.1 to 6.0 */
-        transition: width 1.5s;
+        -webkit-transition: width $transition-width;
+        transition: width $transition-width;
         background-color: $main-button-color;
         color: transparent;
         p,
         img {
             opacity: 0;
-            -webkit-transition: opacity 1.5s;
-            /* For Safari 3.1 to 6.0 */
-            transition: opacity 1.5s;
-            transition-delay: 1s;
+            -webkit-transition: opacity $transition-opacity;
+            transition: opacity $transition-opacity;
+            transition-delay: $transition-opacity-delay;
             margin-right: 6px;
         }
         img {
@@ -155,7 +152,7 @@
             input {
                 font-size: $desktop-font-size-h3;
             }
-            ::placeholder{
+            ::placeholder {
                 font-size: $desktop-font-size-h3;
             }
         }
@@ -178,9 +175,7 @@
         .alert-email-error {
             font-size: $desktop-font-size-h3;
             p,
-            img {
-                
-            }
+            img {}
             img {}
         }
         .alert-email-success-show,
