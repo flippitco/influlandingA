@@ -60,6 +60,9 @@
         }
     }
     .placeholder-error{
+        input{
+            border: 1px solid $error-alert-color;
+        }
         ::placeholder { 
             color: $error-alert-color;
         }
@@ -92,16 +95,19 @@
         position: absolute;
         width: 0px;
         height: 56px;
-        -webkit-transition: width 2.5s; /* For Safari 3.1 to 6.0 */
-        transition: width 2.5s;
+        -webkit-transition: width 1.5s; /* For Safari 3.1 to 6.0 */
+        transition: width 1.5s;
         background-color: $main-button-color;
         color: transparent;
         p, img{
             opacity: 0;
-            -webkit-transition: opacity 2.5s; /* For Safari 3.1 to 6.0 */
-            transition: opacity 2.5s;
-            transition-delay: 1.5s;
+            -webkit-transition: opacity 1.5s; /* For Safari 3.1 to 6.0 */
+            transition: opacity 1.5s;
+            transition-delay: 1s;
             margin-right: 6px;
+        }
+        img{
+            display: none;
         }
     }
     .alert-email-success-show, .alert-email-error-show{
@@ -117,6 +123,7 @@
             opacity: 1;
         }
         img{
+            display: block;
             position: absolute;
             top: 10px;
             right: 6px;
