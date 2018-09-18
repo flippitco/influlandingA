@@ -47,4 +47,26 @@
 }
 
 @media only screen and (min-width: 1280px) {
+    .third-slide-container {
+        padding-bottom: $tablet-padding-bottom-slide-container;
+        .third-slide-img {
+            margin-top: $tablet-margin-top-container-to-image;
+            width: 400px;
+        }
+        .third-slide-h2 {
+            font-size: $desktop-font-size-h2;
+        }
+        .third-slide-h3 {
+            width: $tablet-width-h3;
+            font-size: $desktop-font-size-h3;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .third-slid-br {
+            display: none
+        }
+        .third-slide-button-container {
+            width: $tablet-width-button-input-container;
+        }
+    }
 }
