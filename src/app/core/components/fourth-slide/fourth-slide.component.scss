@@ -26,7 +26,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .fourth-slide-container{
+    .fourth-slide-container {
         padding-bottom: $tablet-padding-bottom-slide-container;
         .fourth-slide-img {
             margin-top: $tablet-margin-top-container-to-image;
@@ -44,17 +44,16 @@
 }
 
 @media only screen and (min-width: 1280px) {
-    .fourth-slide-container{
+    .fourth-slide-container {
         display: flex;
         padding-bottom: $desktop-padding-bottom-third-slide-container;
         text-align: left;
-
-        .fourth-slide-left{
+        .fourth-slide-left {
             width: 50%;
             display: flex;
             justify-content: center;
         }
-        .fourth-slide-right{
+        .fourth-slide-right {
             width: 50%;
         }
         .fourth-slide-img {
@@ -75,6 +74,28 @@
         .fourth-slide-button-container {
             width: $desktop-width-button-input-container;
             margin-left: 0;
+        }
+    }
+}
+
+@media only screen and (min-width: 1680px) {
+    .fourth-slide-container {
+        padding-bottom: $big-desktop-margin-top-container-to-content;
+
+        .fourth-slide-img {
+            margin-top: $big-desktop-margin-top-container-to-content;
+            width: $big-desktop-width-main-img-slide;
+        }
+        .fourth-slide-h2 {
+            margin-top: $big-desktop-margin-top-container-to-content;
+            font-size: $big-desktop-font-size-h2;
+        }
+        .fourth-slide-h3 {
+            width: $big-desktop-width-h3;
+            font-size: $big-desktop-font-size-h3;
+        }
+        .fourth-slide-button-container {
+            width: $big-desktop-width-button-input-container;
         }
     }
 }

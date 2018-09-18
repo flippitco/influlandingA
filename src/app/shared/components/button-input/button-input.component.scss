@@ -12,7 +12,7 @@
         z-index: 3;
         button {
             width: 100%;
-            height: 56px;
+            height: $mobile-height-button-input-container;
             border-radius: 3.9px;
             background-color: $main-button-color;
             color: $main-button-text-color;
@@ -36,7 +36,7 @@
         position: absolute;
         z-index: 2;
         width: 0px;
-        height: 56px;
+        height: $mobile-height-button-input-container;
         -webkit-transition: width $transition-width;
         transition: width $transition-width;
         input {
@@ -73,7 +73,7 @@
         position: absolute;
         margin: 0 auto;
         width: 100%;
-        height: 56px;
+        height: $mobile-height-button-input-container;
         border-radius: 2px;
         background-color: $main-button-color;
         color: $main-button-text-color;
@@ -94,7 +94,7 @@
         top: 0;
         position: absolute;
         width: 0px;
-        height: 56px;
+        height: $mobile-height-button-input-container;
         -webkit-transition: width $transition-width;
         transition: width $transition-width;
         background-color: $main-button-color;
@@ -145,9 +145,7 @@
             button {
                 font-size: $desktop-font-size-h3;
             }
-            .buttonTextHide {}
         }
-        .button-container-hide {}
         .input-container {
             input {
                 font-size: $desktop-font-size-h3;
@@ -156,12 +154,7 @@
                 font-size: $desktop-font-size-h3;
             }
         }
-        .input-container-show {}
-        .input-container-hide {
-            input {}
-        }
         .placeholder-error {
-            input {}
             ::placeholder {
                 font-size: $desktop-font-size-h3;
             }
@@ -169,21 +162,36 @@
         .sendButton {
             font-size: $desktop-font-size-h3;
         }
-        .sendButtonShow {}
-        .sendButtonHide {}
-        .alert-email-success,
-        .alert-email-error {
-            font-size: $desktop-font-size-h3;
-            p,
-            img {}
-            img {}
+    }
+}
+
+@media only screen and (min-width: 1680px) {
+    .button-input-container {
+        .button-container {
+            button {
+                font-size: $big-desktop-font-size-h3;
+                height: $big-desktop-height-button-input-container;
+            }
         }
-        .alert-email-success-show,
-        .alert-email-error-show {
-            p,
-            img {}
-            img {}
+        .input-container {
+            height: $big-desktop-height-button-input-container;
+
+            input {
+                font-size: $big-desktop-font-size-h3;
+            }
+            ::placeholder {
+                font-size: $big-desktop-font-size-h3;
+            }
         }
-        .alert-email-error-show {}
+        .placeholder-error {
+            ::placeholder {
+                font-size: $big-desktop-font-size-h3;
+            }
+        }
+        .sendButton {
+            top: $big-desktop-height-button-input-container + 10;
+            height: $big-desktop-height-button-input-container;
+            font-size: $big-desktop-font-size-h3;
+        }
     }
 }

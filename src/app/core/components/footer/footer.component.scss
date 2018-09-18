@@ -23,3 +23,29 @@
         }
     }
 }
+
+@media only screen and (min-width: 1440px) {
+    .footer-container {
+        .footer-logo-container {
+            .footer-logo {
+                margin-top: $margin-top-image-to-h2;
+                width: 300px;
+            }
+            .footer-h3 {
+                font-size: $big-desktop-font-size-h3;
+            }
+            .footer-logos-container {
+                margin-top: $margin-top-container-to-image;
+                width: 280px;
+                display: flex;
+                a{
+                    margin-right: 40px;
+                    margin-bottom: 68px;
+                    img{
+                        width: 60px;
+                    }
+                }
+            }
+        }
+    }
+}

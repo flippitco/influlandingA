@@ -35,7 +35,6 @@
 @media only screen and (min-width: 768px) {
     .second-slide-container {
         padding-bottom: $tablet-padding-bottom-slide-container;
-
         .second-slide-left {
             .second-slide-h2 {}
             .second-slide-h3 {
@@ -55,12 +54,12 @@
         }
     }
 }
+
 @media only screen and (min-width: 1280px) {
     .second-slide-container {
         padding-bottom: $tablet-padding-bottom-slide-container;
         display: flex;
         text-align: left;
-
         .second-slide-left {
             display: flex;
             flex-direction: column;
@@ -87,13 +86,71 @@
         .second-slide-right {
             position: relative;
             width: 50%;
-
             .second-slide-background {
                 display: block;
                 position: relative;
                 right: 0;
                 top: -106px;
                 width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .second-slide-container {
+        padding-bottom: $tablet-padding-bottom-slide-container;
+        display: flex;
+        text-align: left;
+        .second-slide-left {
+            display: flex;
+            flex-direction: column;
+            padding-left: $desktop-padding-left-container;
+            width: 50%;
+            .second-slide-h2 {
+                font-size: $desktop-font-size-h2;
+            }
+            .second-slide-h3 {
+                width: $desktop-width-h3;
+                padding: 0;
+                margin-left: 0;
+                margin-right: 0;
+                font-size: $desktop-font-size-h3;
+            }
+            .second-slide-flipButton {
+                display: none;
+            }
+            .second-slide-button-container {
+                width: $desktop-width-button-input-container;
+                margin-left: 0;
+            }
+        }
+        .second-slide-right {
+            position: relative;
+            width: 50%;
+            .second-slide-background {
+                display: block;
+                position: relative;
+                right: 0;
+                top: -106px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1680px) {
+    .second-slide-container {
+        .second-slide-left {
+            .second-slide-h2 {
+                font-size: $big-desktop-font-size-h2;
+            }
+            .second-slide-h3 {
+                font-size: $big-desktop-font-size-h3;
+                width: $big-desktop-width-h3;
+            }
+            .second-slide-button-container {
+                width: $big-desktop-width-button-input-container;
             }
         }
     }

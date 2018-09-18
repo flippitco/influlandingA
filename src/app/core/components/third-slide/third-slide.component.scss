@@ -70,3 +70,28 @@
         }
     }
 }
+
+@media only screen and (min-width: 1680px) {
+    .third-slide-container {
+        padding-bottom: $big-desktop-padding-bottom-slide-container;
+        .third-slide-img {
+            margin-top: $big-desktop-margin-top-container-to-image;
+            width: $big-desktop-width-main-img-slide;
+        }
+        .third-slide-h2 {
+            font-size: $big-desktop-font-size-h2;
+        }
+        .third-slide-h3 {
+            width: $big-desktop-width-h3;
+            font-size: $big-desktop-font-size-h3;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .third-slid-br {
+            display: none
+        }
+        .third-slide-button-container {
+            width: $big-desktop-width-button-input-container;
+        }
+    }
+}
