@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "ng build --prod --base-href 'https://flippitco.com' && rm dist/3rdpartylicenses.txt && npx ngh --no-silent"
+    "deploy": "ng build --prod --base-href 'https://flippitco.com' && rm dist/3rdpartylicenses.txt && cp CNAME dist/CNAME && npx ngh --no-silent"
   },
   "private": true,
   "dependencies": {
