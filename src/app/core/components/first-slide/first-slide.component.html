@@ -4,8 +4,8 @@
     <h2 class="first-slide-h2">Tu contenido tiene valor</h2>
     <h3 class="first-slide-h3">El ‘like’ es historia. Flippit te permite recibir una valoración real de tus fans.</h3>
     <div class="input-container first-slide-input-container">
-      <input type="email" placeholder="Email" id="input1">
-      <button>Acceso anticipado</button>
+      <input type="email" [placeholder]="placeholder.text" [(ngModel)]="email">
+      <button (click)="sendEmail(email)">Acceso anticipado</button>
     </div>
   </div>
   <div class="first-slide-right">

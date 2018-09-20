@@ -11,6 +11,7 @@ import { SecondSlideComponent } from './components/second-slide/second-slide.com
 import { ThirdSlideComponent } from './components/third-slide/third-slide.component';
 import { FourthSlideComponent } from './components/fourth-slide/fourth-slide.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { EmailService } from '../shared/services/email.service';
 
 @NgModule({
   imports: [
@@ -32,7 +33,7 @@ import { FooterComponent } from './components/footer/footer.component';
   exports: [
     Error404Component,
   ],
-  providers: []
+  providers: [EmailService]
 })
 
 export class CoreModule {
