@@ -11,6 +11,6 @@ export const AppConfig: IAppConfig = {
     error404: '404',
   },
   endpoints: {
-    mail: 'https://mail-microservice.herokuapp.com/email'
+    mail: 'https://mail-microservice.herokuapp.com/api/email'
   }
 };
