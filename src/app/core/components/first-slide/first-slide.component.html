@@ -3,13 +3,16 @@
     <img class="first-slide-logo" src="assets/images/logo.svg" alt="flippit-logo">
     <h2 class="first-slide-h2">Tu contenido tiene valor</h2>
     <h3 class="first-slide-h3">El ‘like’ es historia. Flippit te permite recibir una valoración real de tus fans.</h3>
-    <div class="input-container first-slide-input-container">
-      <input type="email" [placeholder]="placeholder.text" [(ngModel)]="email">
-      <button (click)="sendEmail(email)">Acceso anticipado</button>
+
+    <div class="first-slide-button-container-desktop">
+      <app-button-input-desktop text="Acceso Anticipado"></app-button-input-desktop>
+    </div>
+    <div class="first-slide-button-container">
+      <app-button-input text="Acceso Anticipado"></app-button-input>
     </div>
   </div>
   <div class="first-slide-right">
-    <img class="first-slide-img"src="assets/images/mobileFirstSlideImg.svg">
-    <img class="first-slide-img-desktop"src="assets/images/firstSectionImg.svg">
+    <img class="first-slide-img" src="assets/images/mobileFirstSlideImg.svg">
+    <img class="first-slide-img-desktop" src="assets/images/firstSectionImg.svg">
   </div>
 </div>

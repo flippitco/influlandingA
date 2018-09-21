@@ -1,0 +1,103 @@
+
+@import '../../../../styles/palette';
+@import '../../../../styles/variables';
+
+.button-input-desktop-container {
+    position: relative;
+    width: 100%;
+    .input-button-container{
+        position: absolute;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        -webkit-transition: width $transition-width;
+        transition: width $transition-width; 
+        label {
+            width: 60%;
+            ::placeholder {color: rgba(0,0,0,0.30);letter-spacing: 0;}
+            input {
+                box-sizing: border-box;
+                width: 100%;
+                height: 100%;
+                border-radius: 5px 0 0 5px;
+                padding-left: 30px;
+            }
+        }
+        button{
+            background-color: $main-button-color;
+            width: 40%;
+            height: 100%;
+            border-radius: 0 5px 5px 0;
+            font-size: $mobile-h3-font-size;
+            color: $first-slide-text-color;
+            cursor: pointer;
+        }
+        .placeholder-error {
+            input {
+                border: 1px solid $error-alert-color;
+            }
+            ::placeholder {
+                color: $error-alert-color;
+            }
+        }
+    }
+    .input-button-container-hide {
+        width: 0%;
+        label {
+            input {
+                padding-left: 0px;
+            }
+        }
+        button {
+            font-size: 0;
+        }
+    }
+    .alert-email-success,
+    .alert-email-error {
+        top: 0;
+        position: absolute;
+        width: 0px;
+        height: 60px;;
+        -webkit-transition: width $transition-width;
+        transition: width $transition-width;
+        background-color: $main-button-color;
+        color: transparent;
+        p,
+        img {
+            opacity: 0;
+            -webkit-transition: opacity $transition-opacity;
+            transition: opacity $transition-opacity;
+            transition-delay: $transition-opacity-delay;
+            margin-right: 6px;
+        }
+        img {
+            display: none;
+        }
+    }
+    .alert-email-success-show,
+    .alert-email-error-show {
+        position: relative;
+        width: 100%;
+        font-size: $mobile-h3-font-size;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $main-button-text-color;
+        border-radius: 2px 30px 30px 2px;
+        p,
+        img {
+            opacity: 1;
+        }
+        img {
+            display: block;
+            position: absolute;
+            top: 18px;
+            right: 18px;
+            width: 25px;
+            cursor: pointer;
+        }
+    }
+    .alert-email-error-show {
+        background-color: $error-alert-color;
+    }
+}

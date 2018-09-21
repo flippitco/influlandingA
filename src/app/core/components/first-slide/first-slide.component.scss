@@ -38,8 +38,6 @@
     margin-top: 8px;
 }
 
-.first-slide-right {}
-
 .first-slide-img {
     position: absolute;
     top: 0;
@@ -50,8 +48,18 @@
 .first-slide-img-desktop {
     display: none;
 }
-
-/* MOBILE */
+.input-container{
+    display: none;
+}
+.first-slide-button-container {
+    margin: 0 auto;
+    margin-top: $margin-top-button-input-container-mobile;
+    width: 90%;
+    height: 56px;
+}
+.first-slide-button-container-desktop{
+    display: none;
+}
 
 @media only screen and (min-width: 321px) {
     .first-slide {
@@ -132,6 +140,7 @@
         background-size: 172%;
         height: 514px;
         background-position-y: -202px;
+        
     }
 }
 
@@ -141,7 +150,6 @@
     .first-slide {
         background-position-y: -232px;
     }
-    .first-slide-left {}
     .first-slide-logo {
         height: 24px;
         margin-top: 32px;
@@ -157,26 +165,48 @@
         font-size: 18px;
         color: $first-slide-text-color;
     }
-    .first-slide-input-container {}
-    .first-slide-input-container>button {
-        margin-top: 0;
-    }
-    .first-slide-right {}
     .first-slide-img {
         position: absolute;
         top: 0;
         height: 260px;
     }
-    .input-container {
-        display: flex;
+
+    .first-slide-button-container {
+        display: none;
     }
-    .input-container>input {
-        width: 66%;
-        border-radius: 5px 0 0 5px;
+    .first-slide-button-container-desktop{
+        margin-top: 60px;
+        display: block;
     }
-    .input-container>button {
-        width: 34%;
-        border-radius: 0 5px 5px 0;
+    
+    .first-slide{
+        .first-slide-left{
+            .input-container {
+                display: flex;
+                -webkit-transition: width $transition-width;
+                transition: width $transition-width;
+                input {
+                    width: 66%;
+                    border-radius: 5px 0 0 5px;
+                }
+                button {
+                    margin-top: 0;
+                    width: 34%;
+                    border-radius: 0 5px 5px 0;
+                }
+            }
+            .input-container-hide{
+                width: 0;
+                // input{
+                //     padding-left: 0;
+                //     border: none;
+                // }
+                // button{
+                //     width: 0px;
+                //     font-size: 0;
+                // }
+            }
+        }
     }
 }
 
@@ -204,9 +234,6 @@
         display: flex;
         padding: 0 120px;
     }
-    .input-container>button {
-        font-size: $desktop-font-size-h3;
-    }
     .first-slide-left {
         width: 65%;
         margin: 0;
@@ -224,8 +251,6 @@
         margin-top: 32px;
         width: 438px;
     }
-    .first-slide-input-container {}
-    .first-slide-input-container>button {}
     .first-slide-right {
         width: 35%;
     }
@@ -238,7 +263,6 @@
         position: initial;
         height: 360px;
     }
-    .input-container {}
     .input-container>input {
         width: 60%;
     }

@@ -1,0 +1,14 @@
+<div class="button-input-desktop-container">
+    <div class="input-button-container" [ngClass]="{'input-button-container-hide': inputHide}">
+        <label for="emailInput" [ngClass]="{'placeholder-error': placeholder.error}">
+            <input id="emailInput" type="text" [placeholder]="placeholder.text" [(ngModel)]="email">
+        </label>
+        <button (click)="sendEmail(email)">{{buttonText}}</button>
+    </div>
+    <div class="alert-email-success" [ngClass]="{'alert-email-success-show': success}">
+        <p>Pronto recibirás noticias!</p><img (click)="closeAlert()" src="assets/images/closeIcon.svg">
+    </div>
+    <div class="alert-email-error" [ngClass]="{'alert-email-error-show': error}">
+        <p>Ups! Prueba de nuevo!</p><img (click)="closeAlert()" src="assets/images/closeIcon.svg">
+    </div>
+</div>
