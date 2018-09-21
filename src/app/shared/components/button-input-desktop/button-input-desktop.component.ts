@@ -47,10 +47,8 @@ export class ButtonInputDesktopComponent implements OnInit {
     this.emailService.sendEmail(email).subscribe((response: { status: Number }) => {
       if (response.status === 200) {
         this.success = true;
-        console.log('email enviado');
       }
     }, () => {
-      console.log('email fail!');
       this.error = true;
     });
   }
