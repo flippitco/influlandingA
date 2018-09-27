@@ -21,7 +21,7 @@
 .first-slide-h2 {
     margin-top: 32px;
     width: 200px;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 600;
     color: $first-slide-text-color;
 }
@@ -89,6 +89,11 @@
     .first-slide-img {
         height: 225px;
     }
+    .first-slide-h2 {
+
+        font-size: 32px;
+    }
+
 }
 
 @media only screen and (min-width: 400px) {
@@ -244,7 +249,7 @@
     .first-slide-h2 {
         font-size: 64px;
         margin-top: 104px;
-        width: 410px;
+        width: 550px;
     }
     .first-slide-h3 {
         font-size: 24px;
